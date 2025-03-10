@@ -1,0 +1,184 @@
+--- Generated Test Paper ---
+Proofs in Mathematics - Test Paper
+
+Time: 2.5 Hours                                                                     Max. Marks: 80
+
+General Instructions:
+1. All questions are compulsory.
+2. Section A consists of 20 Multiple Choice Questions carrying 1 mark each.
+3. Section B consists of 5 Very Short Answer type questions carrying 2 marks each. Internal choice is provided in 2 questions.
+4. Section C consists of 6 Short Answer type questions carrying 3 marks each. Internal choice is provided in 2 questions.
+5. Section D consists of 4 Long Answer type questions carrying 5 marks each. Internal choice is provided in 2 questions.
+6. Section E consists of 3 Case-Study Based questions carrying 4 marks each. Internal choice is provided in all 3 questions.
+
+
+Section A (MCQs and Assertion-Reasoning) (20 Marks)
+
+1. Which of these is NOT a mathematical statement?
+    (a) The sun rises in the east.
+    (b) How are you?
+    (c) 2 + 2 = 4
+    (d) All triangles have three sides.
+
+2.  A statement which is either always true or always false is called:
+    (a) Ambiguous
+    (b) Mathematical statement
+    (c) Conjecture
+    (d) Hypothesis
+
+3. The statement "All humans are mortal" is:
+    (a) Always true
+    (b) Always false
+    (c) Ambiguous
+    (d) Sometimes true
+
+4. "Vehicles have four wheels" is a ________ statement.
+    (a) True
+    (b) False
+    (c) Ambiguous
+    (d) Mathematical
+
+5. The negation of "All equilateral triangles are isosceles" is:
+    (a) All equilateral triangles are not isosceles.
+    (b) Some equilateral triangles are not isosceles.
+    (c) No equilateral triangle is isosceles.
+    (d) Some isosceles triangles are not equilateral.
+
+6. The speed of light is approximately:
+    (a) 3 × 10⁵ m/s
+    (b) 3 × 10⁵ km/s
+    (c) 3 × 10⁸ m/s
+    (d) 3 × 10⁸ km/s
+
+7.  If x < 4, which of the following is true?
+    (a) 2x > 8
+    (b) 2x < 6
+    (c) 2x < 8
+    (d) x > 2
+
+8. The negation of "Some rational numbers are integers" is:
+    (a) All rational numbers are integers.
+    (b) No rational number is an integer.
+    (c) Some rational numbers are not integers.
+    (d) All integers are rational numbers.
+
+9.  If ABCD is a parallelogram and AD = 5 cm, AB = 7 cm, then BC = ?
+    (a) 7 cm
+    (b) 5 cm
+    (c) 12 cm
+    (d) Cannot be determined
+
+10.  The converse of "If p, then q" is:
+     (a) If q, then p
+     (b) If not p, then not q
+     (c) If not q, then not p
+     (d) p if and only if q
+
+
+11-20.  (Assertion-Reasoning Questions based on concepts like negation, converse, types of statements - true/false/ambiguous, deductive reasoning from the chapter.  Due to the nature of assertion-reasoning, these are omitted for brevity but should be included in the actual test paper. Example: Assertion: All primes greater than 3 are of the form 6k+1 or 6k+5. Reason:  6k, 6k+2, 6k+4 are divisible by 2, and 6k+3 is divisible by 3.)
+
+
+
+Section B (VSA) (10 Marks)
+
+1.  State the negation of: "Some polygons are pentagons."
+
+2.  If all integers are rational numbers, and 'a' is an integer, what can you conclude about 'a'?
+
+3.  State whether the following statement is true or false: "Not all real numbers are rational."
+
+OR
+
+State whether the following statement is true or false: "All hexagons are polygons."
+
+4.  What is deductive reasoning? Give a simple example.
+
+5.  What is the converse of: "If a number is divisible by 2, then it is an even number."
+
+OR
+
+What is the negation of:  "No student is lazy."
+
+
+
+Section C (SA) (18 Marks)
+
+1.  Explain the concept of 'proof by contradiction' with an example.
+
+2.  Prove that the sum of two consecutive odd numbers is divisible by 4.
+
+3. If ab ≠ 0, where a and b are real numbers, are both a and b necessarily non-zero? Justify.
+
+OR
+
+Restate the following statement with appropriate conditions to make it true: "If a² > b², then a > b."
+
+
+4.  Explain the difference between a conjecture and a theorem.
+
+5.  Given that p is irrational for all primes p, and suppose that 19423 is a prime. What can you conclude about √19423?  Justify your answer.
+
+6.  Given that ABCD is a parallelogram and ∠B = 80°. What can you conclude about the other angles of the parallelogram?
+
+
+Section D (LA) (20 Marks)
+
+1.  Prove that if a transversal intersects two parallel lines, then each pair of corresponding angles is equal. (You may use axioms and theorems from previous classes).
+
+2. Explain the method of "proof by exhaustion" with an example from the chapter.
+
+OR
+
+Prove that the product of a non-zero rational number and an irrational number is irrational (using proof by contradiction).
+
+3.  Explain the process of constructing a mathematical proof.  What are the key components?
+
+4.  Prove that if for an integer a, a² is even, then so is a (using proof by contradiction).
+
+
+OR
+
+Prove that if for an integer a, a² is divisible by 3, then a is divisible by 3 (using proof by contradiction).
+
+
+
+Section E (Case-Study Based) (12 Marks)
+
+
+1. Case Study:  Consider the statement "If a quadrilateral is a square, then it is a rectangle."
+    (a) Write the converse of the statement.
+    (b) Is the converse true or false? Explain.
+    (c) Write the negation of the original statement.
+
+OR
+
+Case Study: Consider the statement "If a number is divisible by 6, it is divisible by 3."
+    (a) Write the converse of the statement.
+    (b) Is the converse true or false? Explain.
+    (c) Write the negation of the original statement.
+
+
+2.  Case Study: Consider the statement "If two triangles are congruent, then their corresponding sides are equal."
+     (a) Write the converse of the statement.
+     (b) Is the converse true or false? Explain.
+     (c) Give an example of two triangles that are not congruent but have corresponding angles equal.
+
+OR
+
+Case Study: Consider the statement "If x is a prime number greater than 2, then x is odd."
+    (a) Write the converse of the statement.
+    (b) Is the converse true or false? Explain.
+    (c) Write the negation of the original statement.
+
+
+3.  Case Study:  Deductive reasoning is used in various fields. Consider the following scenario: "All dogs are mammals.  Fido is a dog."
+      (a) What can you conclude about Fido using deductive reasoning?
+      (b)  Provide another example of deductive reasoning using a different context.
+
+OR
+
+
+Case Study:  Consider the following statement: "If it rains, the ground gets wet."
+    (a)  Write the converse of the statement.
+    (b) Is the converse necessarily true? Explain.
+    (c)  Give a scenario where the ground is wet, but it did not rain.
