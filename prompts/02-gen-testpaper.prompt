@@ -7,12 +7,12 @@ You are an AI assistant tasked with generating a structured test paper. You will
 #### **Chapter Content (CC):**
 📌 **Text Extracted from PDF:**
 ```plaintext
-[chapter_content_summary]
+{chapter_content_summary}
 ```
 
 #### **Test Paper Analysis (TPA):**
 ```json
-[test_paper_analysis]
+{test_paper_analysis}
 ```
 
 ### **Task Guidelines:**
