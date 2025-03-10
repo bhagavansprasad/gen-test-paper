@@ -1,0 +1,4 @@
+*.pyc
+__pycache__/
+app.log
+context.txt

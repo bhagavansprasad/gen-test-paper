@@ -10,7 +10,16 @@ from reportlab.lib.styles import ParagraphStyle #added new
 from reportlab.lib import colors #new dep
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
-
+from langchain_community.document_loaders import PyPDFLoader # Import PyPDFLoader
+from pdbwhereami import whereami
+import json
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer #Add new
+from reportlab.lib.styles import getSampleStyleSheet # New Import
+from reportlab.lib.units import inch #added new
+from reportlab.lib.styles import ParagraphStyle #added new
+from reportlab.lib import colors #new dep
+from langchain_community.document_loaders import UnstructuredPDFLoader
+from pdbwhereami import whereami
 
 # --- Helper Functions ---
 def load_pdf_content_from_gcs(gcs_uri: str) -> PDFContent:
@@ -28,6 +37,31 @@ def load_pdf_content_from_gcs(gcs_uri: str) -> PDFContent:
         print(f"Error loading PDF from GCS: {e}")
         return PDFContent(text="")
 
+# --- MODIFIED FUNCTION: Load PDF from Local Path using UnstructuredPDFLoader ---
+def load_pdf_content_local(local_path: str) -> PDFContent:
+    """Loads the text content of a PDF document from a local file path into a structured PDFContent object using UnstructuredPDFLoader."""
+    whereami(local_path) #debug path
+    try:
+        # loader = PyPDFLoader(local_path) # Removed PyPDFLoader
+        loader = UnstructuredPDFLoader(local_path) # Use UnstructuredPDFLoader
+        whereami("UnstructuredPDFLoader initialized") # Debugging point - Changed message
+        document = loader.load() # UnstructuredPDFLoader returns a list of Document objects
+        whereami(f"Number of documents loaded: {len(document)}") # Debugging - documents, not pages
+
+        # --- Extract text from Document objects ---
+        text_content = ""
+        for doc in document: # Iterate through Document objects
+            text_content += doc.page_content + "\n" # Concatenate page_content from each doc
+        
+        whereami(f"PDF Content length: {len(text_content)}") # Debugging point - length of extracted text
+        # whereami(f"PDF Content: {text_content[:200]}...") # Print the first 200 characters
+        return PDFContent(text=text_content) # Use text_content
+    except Exception as e:
+        print(f"Error loading PDF from local path using UnstructuredPDFLoader: {e}") # Changed error message
+        whereami(f"Exception details: {e}") # Print exception details
+        return PDFContent(text="")
+    
+    
 def clean_llm_output(llm_output: str) -> str:
     """
     Cleans the LLM output by removing any leading/trailing whitespace and ```json blocks.

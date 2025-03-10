@@ -1,8 +1,6 @@
-You are an AI assistant tasked with analyzing a sample test paper. You will be provided with an attached document:
+You are an AI assistant tasked with analyzing a sample test paper. You will be provided with the text content of the paper.
 
-1.  **Sample Test Paper (STP):** An image of a question paper that serves as a template.
-
-Analyze the attached image of the question paper (STP) and provide a detailed summary of its structure and content. Focus *solely* on the English language version of the paper. Disregard the subject matter of the paper itself.
+Analyze the test paper content and provide a detailed summary of its structure and content in JSON format. Focus *solely* on identifying the structure of the paper and the number of questions with its difficulty level. Disregard the subject matter of the paper itself.
 
 Specifically, extract and organize the following information:
 
@@ -31,35 +29,64 @@ Specifically, extract and organize the following information:
 *   Do not provide information beyond what is explicitly requested in this prompt. Specifically, do not include any assumptions about the subject matter or difficulty level of the paper.
 *   Examine only ENGLISH portion of the attached document and the prompt.
 
+**Here is the test paper text:**
+
+{test_paper_text}
+
 **Output Format (Plain JSON):**
 
 ```json
-{
-  "stp_analysis": {
+{{
+  "stp_analysis": {{
     "total_questions": "...",
     "all_compulsory": "...",
     "sections": ["...", "..."],
-    "section_breakdown": {
-      "A": {
+    "section_breakdown": {{
+      "A": {{
         "num_questions": "...",
         "mark_per_question": "...",
         "total_marks": "...",
         "question_type": "...",
         "internal_choice": "..."
-      },
-      // Repeat for B, C, D, E
-    },
-    "questions_distrubution_type":{
+      }},
+      "B": {{
+        "num_questions": "...",
+        "mark_per_question": "...",
+        "total_marks": "...",
+        "question_type": "...",
+        "internal_choice": "..."
+      }},
+      "C": {{
+        "num_questions": "...",
+        "mark_per_question": "...",
+        "total_marks": "...",
+        "question_type": "...",
+        "internal_choice": "..."
+      }},
+      "D": {{
+        "num_questions": "...",
+        "mark_per_question": "...",
+        "total_marks": "...",
+        "question_type": "...",
+        "internal_choice": "..."
+      }},
+      "E": {{
+        "num_questions": "...",
+        "mark_per_question": "...",
+        "total_marks": "...",
+        "question_type": "...",
+        "internal_choice": "..."
+      }}
+    }},
+    "questions_distrubution_type":{{
           "mcqs": "",
           "descriptive": ""
-    }
-    "internal_choice": {
+    }},
+    "internal_choice_count": {{
       "B": "...",
       "C": "...",
       "D": "...",
       "E": "..."
-    }
-  }
-}
-```
-
+    }}
+  }}
+}}```
