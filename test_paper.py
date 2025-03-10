@@ -31,7 +31,7 @@ def generate_assessment(pdf_content: PDFContent, test_paper_summary: Dict, file_
             test_paper_analysis=json.dumps(test_paper_summary)
         ) 
 
-        whereami(f"formatted_prompt :{formatted_prompt}")
+        # whereami(f"formatted_prompt :{formatted_prompt}")
     except Exception as e:
         print(f"Error formatting prompt: {e}")
         return None
@@ -49,17 +49,18 @@ def generate_assessment(pdf_content: PDFContent, test_paper_summary: Dict, file_
 
     whereami(f"LLM Response:")
 
-    try:
-        llm_output = clean_llm_output(llm_output)
-        # whereami(f"LLM Response: {llm_output}")
-    except Exception as e:
-        print(f"Error cleaning LLM output: {e}")
+    # try:
+    #     llm_output = clean_llm_output(llm_output)
+    #     # whereami(f"LLM Response: {llm_output}")
+    # except Exception as e:
+    #     print(f"Error cleaning LLM output: {e}")
 
     # json_file = "mcqs.json"
     # with open(json_file, "r") as f:
     #     llm_output = f.read()
             
     whereami(f"type :{type(llm_output)}")
+
     # whereami(f"LLM Response: {llm_output}")
     return llm_output
     # try:
