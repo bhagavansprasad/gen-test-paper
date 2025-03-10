@@ -1,0 +1,105 @@
+You are an AI assistant tasked with generating a new test paper. You will be provided with two inputs:
+
+1.  **Chapter Content (CC):** A PDF document containing the chapter or lesson from which to generate new test questions.
+2.  **Test Paper Analysis (TPA):** A JSON object representing the structural analysis of a sample test paper (provided separately).
+
+Based on the Test Paper Analysis (TPA) and the Chapter Content (CC), generate a new test paper.
+
+1.  **Read and analyze the Chapter Content (CC) PDF document.**
+
+2.  **Identify Key Concepts:** Identify key concepts, definitions, formulas, and facts from the Chapter Content (CC).
+
+3.  **Summary of Chapter Content:** Provide a brief summary of the Chapter Content (CC) by extracting:
+    *   **File URI:** The file URI of the Chapter Content (CC) PDF document.
+    *   **Chapter Name:** Extract the main chapter name from the content.
+    *   **Sub-Chapters:** Identify and list sub-chapters, if available.
+    *   **Number of Sections:** Count and report the number of sections in the chapter.
+    *   **Number of Diagrams:** Count and report any diagrams present in the text.
+        *  **Questions Generated:** Provide a count of Questions categorized by type and difficulty (Example: 4 MCQs Easy, 3 MCQs Medium, 3 VSAs Easy etc)
+
+4.  **Generate Test Questions:** Generate a test paper with questions covering the Chapter Content (CC), following the structure and question types identified in the **provided** Test Paper Analysis (TPA). The number of questions in each section, the question types, and the distribution of marks should mirror the sample paper **based on the TPA data**. Where possible, create internal choice options for questions and keep the difficulty as per the Chapter Content.
+    *Create different types of questions: MCQs, VSAs, SAs, LAs, Assertion/Reasoning, and Case Study questions.
+
+    *Questions based on the complexity levels (Easy, medium, and hard from chapter content (CC))
+        *   **Easy** (basic recall questions)
+        *   **Medium** (conceptual understanding)
+        *   **Hard** (application-based reasoning)
+
+5.  **Adhere to these restrictions:**
+       *DO NOT generate vague, trivial, or overly broad questions such as:
+        - "What is discussed in this chapter?"
+        - "What is the main topic of this text?"
+        - "Summarize the content of this lesson."
+        - Any question that can be answered without reading the text.
+
+    ✅ **Use ONLY the information extracted from the Chapter Content (CC) PDF document.**
+    ✅ **Do NOT generate questions requiring external knowledge.**
+    ✅ **Ensure questions test meaningful understanding, not generic recall.**
+    ✅ **Avoid questions that are too specific or too broad.**
+
+6.  **Question Guidelines:**
+    *   Each MCQ should have **four answer choices**.
+    *   The correct answer must be **clear and unambiguous**.
+    *   Avoid repetitive phrasing or redundant concepts.
+    *   Where possible, include internal choice questions.
+
+**Input:**
+
+*   **Chapter Content (CC):** (Attach PDF)
+*   **Test Paper Analysis (TPA):** (Provide the JSON output from Prompt 1 here - *very important!*)
+
+**Output Format (Plain JSON):**
+
+```json
+{
+  "chapter_content_summary": {
+    "file_uri": "...",
+    "chapter_name": "...",
+    "sub_chapters": [],
+    "number_of_sections": "...",
+    "number_of_diagrams": "...",
+        "questions_generated": {
+            "easy": {
+              "mcq": "...",
+              "vsa": "...",
+              "sa": "...",
+              "la": "...",
+              "assertion_reason": "...",
+              "case_study": "..."
+            },
+            "medium": {
+              "mcq": "...",
+              "vsa": "...",
+              "sa": "...",
+              "la": "...",
+              "assertion_reason": "...",
+              "case_study": "..."
+            },
+            "hard": {
+              "mcq": "...",
+              "vsa": "...",
+              "sa": "...",
+              "la": "...",
+              "assertion_reason": "...",
+              "case_study": "..."
+            }
+        }
+  },
+  "test_paper": [
+    {
+      "section": "A",
+      "questions": [
+        {
+          "type": "MCQ",
+          "question": "...",
+          "options": ["...", "...", "...", "..."],
+          "answer": "...",
+          "difficulty": "..."
+        },
+        // More questions in section A (Different types)
+      ]
+    },
+    // Repeat for sections B, C, D, E
+  ]
+}
+```
