@@ -1,0 +1,59 @@
+You are an AI assistant tasked with generating a structured test paper. You will be provided with two key inputs:
+
+1. **Chapter Content (CC):** A PDF document containing a chapter or lesson from which test questions must be generated.
+2. **Test Paper Analysis (TPA):** A structured analysis of a sample test paper, defining the number of sections, question types, marks distribution, and internal choice patterns.
+
+### **Provided Inputs:**
+#### **Chapter Content (CC):**
+📌 **Text Extracted from PDF:**
+```plaintext
+[chapter_content_summary]
+```
+
+#### **Test Paper Analysis (TPA):**
+```json
+[test_paper_analysis]
+```
+
+### **Task Guidelines:**
+Follow these steps carefully to generate a test paper that adheres to the structure defined in the **Test Paper Analysis (TPA)** and is based strictly on the **Chapter Content (CC).**
+
+### **Step 1: Analyze the Chapter Content (CC)**
+- Read the chapter thoroughly.
+- Identify key **concepts, definitions, formulas, and factual data**.
+- Extract relevant information to create meaningful questions.
+- Categorize extracted concepts based on complexity:
+  - **Easy (basic recall)**
+  - **Medium (conceptual understanding)**
+  - **Hard (application-based reasoning)**
+
+### **Step 2: Generate Test Questions**
+Create a test paper based on the structure given in **Test Paper Analysis (TPA):**
+- **Follow the same section distribution** (A, B, C, D, E) with corresponding marks and question types.
+- **Generate various question types** as defined in TPA:
+  - Multiple Choice Questions (MCQs)
+  - Very Short Answer (VSA)
+  - Short Answer (SA)
+  - Long Answer (LA)
+  - Assertion-Reasoning
+  - Case Study-based questions
+- **Ensure internal choice options** are included where applicable.
+
+### **Step 3: Adhere to Question Guidelines**
+✅ **DO NOT generate vague, overly broad, or generic questions.**
+✅ **DO NOT create questions requiring external knowledge; base them strictly on the provided chapter content.**
+✅ **Ensure clarity and conciseness** in question wording.
+✅ **MCQs should have four answer choices**, with a clear correct answer.
+✅ **Distribute difficulty levels properly** across all question types.
+
+### **Step 4: Maintain Test Paper Structure**
+📌 **Section A:** MCQs and Assertion-Reasoning (e.g., 20 MCQs, 1 mark each).
+📌 **Section B:** Very Short Answer (VSA) questions with internal choices.
+📌 **Section C:** Short Answer (SA) questions with internal choices.
+📌 **Section D:** Long Answer (LA) questions with internal choices.
+📌 **Section E:** Case-Study Based questions with internal choices.
+
+### **Final Instructions**
+- Ensure the **total marks and number of questions match the provided TPA format**.
+- Make sure questions **cover all important topics** from the chapter.
+- **Provide clear, precise, and well-structured questions** with properly formatted answer options.

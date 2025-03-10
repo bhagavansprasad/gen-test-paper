@@ -1,0 +1,92 @@
+You are an AI assistant tasked with analyzing a sample test paper. You will be provided with the text content of the paper.
+
+Analyze the test paper content and provide a detailed summary of its structure and content in JSON format. Focus *solely* on identifying the structure of the paper and the number of questions with its difficulty level. Disregard the subject matter of the paper itself.
+
+Specifically, extract and organize the following information:
+
+1.  **Overall Structure:**
+    *   Total number of questions in the paper.
+    *   Confirmation of whether all questions are compulsory.
+    *   The number of sections in the paper (e.g., A, B, C, etc.), and list the names of sections.
+
+2.  **Section-Specific Breakdown:** For each section (A, B, C, D, and E):
+    *   The number of questions.
+    *   The mark value assigned to each question.
+    *   Total marks for that section.
+    *   The type of questions used (e.g., Multiple Choice Questions (MCQs), Very Short Answer (VSA), Short Answer (SA), Long Answer (LA), Assertion-Reason, Case-Study Based, etc.).
+    *   Note if the section has Internal Choice options.
+
+3.  **Internal Choice:**
+    *   Explicitly state *how many* questions in *each* section (B, C, D, and E) offer internal choice options.
+
+4.  **Question Distribution Summary:**
+       * Provide how many questions falls into descriptive type and MCQs type
+
+**Instructions:**
+
+*   Prioritize clarity and accuracy in your response.
+*   Organize the extracted information in a clear and structured manner, possibly using bullet points or a table.
+*   Do not provide information beyond what is explicitly requested in this prompt. Specifically, do not include any assumptions about the subject matter or difficulty level of the paper.
+*   Examine only ENGLISH portion of the attached document and the prompt.
+
+**Here is the test paper text:**
+
+{test_paper_text}
+
+**Output Format (Plain JSON):**
+
+```json
+{{
+  "stp_analysis": {{
+    "total_questions": "...",
+    "all_compulsory": "...",
+    "sections": ["...", "..."],
+    "section_breakdown": {{
+      "A": {{
+        "num_questions": "...",
+        "mark_per_question": "...",
+        "total_marks": "...",
+        "question_type": "...",
+        "internal_choice": "..."
+      }},
+      "B": {{
+        "num_questions": "...",
+        "mark_per_question": "...",
+        "total_marks": "...",
+        "question_type": "...",
+        "internal_choice": "..."
+      }},
+      "C": {{
+        "num_questions": "...",
+        "mark_per_question": "...",
+        "total_marks": "...",
+        "question_type": "...",
+        "internal_choice": "..."
+      }},
+      "D": {{
+        "num_questions": "...",
+        "mark_per_question": "...",
+        "total_marks": "...",
+        "question_type": "...",
+        "internal_choice": "..."
+      }},
+      "E": {{
+        "num_questions": "...",
+        "mark_per_question": "...",
+        "total_marks": "...",
+        "question_type": "...",
+        "internal_choice": "..."
+      }}
+    }},
+    "questions_distrubution_type":{{
+          "mcqs": "",
+          "descriptive": ""
+    }},
+    "internal_choice_count": {{
+      "B": "...",
+      "C": "...",
+      "D": "...",
+      "E": "..."
+    }}
+  }}
+}}```
