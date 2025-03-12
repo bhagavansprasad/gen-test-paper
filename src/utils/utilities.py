@@ -1,3 +1,5 @@
+import os
+import datetime
 import logging  # Add this import
 from src.models import PDFContent, Assessment
 from urllib.parse import urlparse
@@ -100,3 +102,33 @@ def save_assessment_to_json(assessment: Assessment, filename: str):
     except Exception as e:
         logger.exception(f"Error saving assessment to JSON: {e}")
         print(f"Error saving assessment to JSON: {e}")  # Keep this for user feedback
+
+def save_assessment_to_file(assessment_text: str, subject: str = "mathematics") -> None:
+    logger.debug(f"In save_assessment_to_file...")
+    logger.debug(f"assessment_text len :{len(assessment_text)}")
+    if assessment_text:
+        try:
+            assessments_dir = "assessments"
+            if not os.path.exists(assessments_dir):
+                os.makedirs(assessments_dir)
+                logger.debug(f"Created directory: {assessments_dir}")
+            logger.info("Assessments dir created") 
+
+        except Exception as e:
+            logger.exception(f"Error creating directory: {e}")
+            return None
+
+    now = datetime.datetime.now()
+    date_time_string = now.strftime("%Y%m%d_%H%M%S")
+    subject = "mathematics"
+    filename = os.path.join(assessments_dir, f"{date_time_string}_{subject}_assessment.txt")
+    logger.debug(f"Filename generated: {filename}")
+
+    try:
+        with open(filename, "w") as f:
+            logger.debug("Writing content to file.")
+            f.write(assessment_text)
+        logger.info(f"Assessment saved to: {filename}")
+    except Exception as e:
+        logger.exception(f"Error writing to file: {e}")
+            

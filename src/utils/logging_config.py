@@ -16,6 +16,7 @@ LOG_LEVELS = {
 # Default log level (Good practice to use environment variables)
 DEFAULT_LOG_LEVEL = os.environ.get('LOG_LEVEL', 'DEBUG').upper()
 LOGGING_LEVEL = LOG_LEVELS.get(DEFAULT_LOG_LEVEL, logging.DEBUG)
+LOGGING_LEVEL = logging.DEBUG
 
 # Define log directory (Making this relative to the project root)
 LOG_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "logs")
