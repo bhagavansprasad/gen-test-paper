@@ -1,0 +1,412 @@
+{
+    "assessment": {
+        "sections": {
+            "A": {
+                "questions": [
+                    {
+                        "question_number": 1,
+                        "question_type": "MCQ",
+                        "question_text": "Which of these is NOT a type of sentence a mathematical statement can be?",
+                        "options": {
+                            "A": "Always true",
+                            "B": "Always false",
+                            "C": "Ambiguous",
+                            "D": "Exclamatory"
+                        },
+                        "answer": "D",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 2,
+                        "question_type": "MCQ",
+                        "question_text": "What is the main tool used in constructing a mathematical proof?",
+                        "options": {
+                            "A": "Inductive Reasoning",
+                            "B": "Abductive Reasoning",
+                            "C": "Deductive Reasoning",
+                            "D": "Analogical Reasoning"
+                        },
+                        "answer": "C",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 3,
+                        "question_type": "MCQ",
+                        "question_text": "According to the chapter, which statement is always true?",
+                        "options": {
+                            "A": "The Sun orbits the Earth.",
+                            "B": "Vehicles have four wheels.",
+                            "C": "All humans are mortal.",
+                            "D": "A road to Kolkata will be closed from November to March."
+                        },
+                        "answer": "C",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 4,
+                        "question_type": "MCQ",
+                        "question_text": "Which statement is considered ambiguous according to the chapter?",
+                        "options": {
+                            "A": "The speed of light is approximately 3 \u00d7 10^5 km/s.",
+                            "B": "Vehicles have four wheels.",
+                            "C": "All humans are mortal.",
+                            "D": "The Sun orbits the Earth."
+                        },
+                        "answer": "B",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 5,
+                        "question_type": "MCQ",
+                        "question_text": "Is the statement 'All equilateral triangles are isosceles' true or false?",
+                        "options": {
+                            "A": "True",
+                            "B": "False",
+                            "C": "Ambiguous",
+                            "D": "Cannot be determined"
+                        },
+                        "answer": "A",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 6,
+                        "question_type": "MCQ",
+                        "question_text": "If x < 4, which of the following is true?",
+                        "options": {
+                            "A": "2x > 8",
+                            "B": "2x < 6",
+                            "C": "2x < 8",
+                            "D": "None of the above"
+                        },
+                        "answer": "C",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 7,
+                        "question_type": "MCQ",
+                        "question_text": "To disprove a statement, it is enough to provide a:",
+                        "options": {
+                            "A": "Proof",
+                            "B": "Counter-example",
+                            "C": "Conjecture",
+                            "D": "Theorem"
+                        },
+                        "answer": "B",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 8,
+                        "question_type": "MCQ",
+                        "question_text": "What is an 'intelligent guess' in mathematics called?",
+                        "options": {
+                            "A": "Theorem",
+                            "B": "Proof",
+                            "C": "Conjecture",
+                            "D": "Axiom"
+                        },
+                        "answer": "C",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 9,
+                        "question_type": "MCQ",
+                        "question_text": "What is the direct method of proof also known as?",
+                        "options": {
+                            "A": "Proof by Exhaustion",
+                            "B": "Proof by Contradiction",
+                            "C": "Deductive method",
+                            "D": "Indirect method"
+                        },
+                        "answer": "C",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 10,
+                        "question_type": "MCQ",
+                        "question_text": "What is the method of eliminating different options to arrive at a conclusion called?",
+                        "options": {
+                            "A": "Proof by Contradiction",
+                            "B": "Proof by Exhaustion",
+                            "C": "Deductive method",
+                            "D": "Indirect method"
+                        },
+                        "answer": "B",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 11,
+                        "question_type": "Assertion-Reasoning",
+                        "question_text": "Assertion (A):  The negation of 'All birds can fly' is 'Some birds cannot fly'. Reason (R): The negation of a statement with 'All' is formed by replacing 'All' with 'Some...not'.",
+                        "options": {
+                            "A": "Both A and R are true and R is the correct explanation of A",
+                            "B": "Both A and R are true but R is not the correct explanation of A",
+                            "C": "A is true but R is false",
+                            "D": "A is false but R is true"
+                        },
+                        "answer": "A",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 12,
+                        "question_type": "Assertion-Reasoning",
+                        "question_text": "Assertion (A): The negation of 'x > 5' is 'x \u2264 5'. Reason (R): The negation of a statement is its opposite.",
+                        "options": {
+                            "A": "Both A and R are true and R is the correct explanation of A",
+                            "B": "Both A and R are true but R is not the correct explanation of A",
+                            "C": "A is true but R is false",
+                            "D": "A is false but R is true"
+                        },
+                        "answer": "A",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 13,
+                        "question_type": "MCQ",
+                        "question_text": "What is the negation of 'No dogs are cats'?",
+                        "options": {
+                            "A": "All dogs are cats",
+                            "B": "Some dogs are cats",
+                            "C": "No dogs are not cats",
+                            "D": "All dogs are not cats"
+                        },
+                        "answer": "B",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 14,
+                        "question_type": "MCQ",
+                        "question_text": "What is the converse of 'If it rains, then the ground gets wet'?",
+                        "options": {
+                            "A": "If the ground gets wet, then it rains.",
+                            "B": "If it doesn't rain, then the ground doesn't get wet.",
+                            "C": "If the ground doesn't get wet, then it doesn't rain.",
+                            "D": "If it rains, then the ground doesn't get wet."
+                        },
+                        "answer": "A",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 15,
+                        "question_type": "MCQ",
+                        "question_text": "What type of proof involves assuming the opposite of what you want to prove?",
+                        "options": {
+                            "A": "Direct Proof",
+                            "B": "Proof by Exhaustion",
+                            "C": "Proof by Contradiction",
+                            "D": "Proof by Induction"
+                        },
+                        "answer": "C",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 16,
+                        "question_type": "MCQ",
+                        "question_text": "What is the converse of 'If a number is divisible by 2, then it is even'?",
+                        "options": {
+                            "A": "If a number is even, then it is divisible by 2.",
+                            "B": "If a number is not divisible by 2, then it is not even.",
+                            "C": "If a number is not even, then it is not divisible by 2.",
+                            "D": "If a number is divisible by 2, then it is not even."
+                        },
+                        "answer": "A",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 17,
+                        "question_type": "MCQ",
+                        "question_text": "What is a statement that is accepted in mathematics?",
+                        "options": {
+                            "A": "An ambiguous statement",
+                            "B": "A statement that is sometimes true",
+                            "C": "A statement that is always true or always false",
+                            "D": "A rhetorical question"
+                        },
+                        "answer": "C",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 18,
+                        "question_type": "MCQ",
+                        "question_text": "What is the negation of 'Some apples are red'?",
+                        "options": {
+                            "A": "All apples are red",
+                            "B": "No apples are red",
+                            "C": "Some apples are not red",
+                            "D": "All apples are not red"
+                        },
+                        "answer": "B",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 19,
+                        "question_type": "MCQ",
+                        "question_text": "What does deductive reasoning involve?",
+                        "options": {
+                            "A": "Making generalizations from specific observations",
+                            "B": "Deducing conclusions from given premises",
+                            "C": "Finding patterns in data",
+                            "D": "Making educated guesses"
+                        },
+                        "answer": "B",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 20,
+                        "question_type": "MCQ",
+                        "question_text": "What is a counter-example used for?",
+                        "options": {
+                            "A": "Proving a statement",
+                            "B": "Disproving a statement",
+                            "C": "Making a conjecture",
+                            "D": "Formulating a theorem"
+                        },
+                        "answer": "B",
+                        "marks": 1
+                    }
+                ]
+            },
+            "B": {
+                "questions": [
+                    {
+                        "question_number": 1,
+                        "question_type": "VSA",
+                        "question_text": "What is a mathematical statement?",
+                        "answer": "A mathematical statement is a meaningful sentence which is either always true or always false.",
+                        "marks": 2
+                    },
+                    {
+                        "question_number": 2,
+                        "question_type": "VSA",
+                        "question_text": "What is deductive reasoning?",
+                        "answer": "Deductive reasoning is the process of logically deriving conclusions from given premises or hypotheses.",
+                        "marks": 2
+                    },
+                    {
+                        "question_number": 3,
+                        "question_type": "VSA",
+                        "question_text": "OR\nWhat is a conjecture?",
+                        "answer": "A conjecture is an intelligent guess or a proposition that is believed to be true but has not been proven.",
+                        "marks": 2
+                    },
+                    {
+                        "question_number": 4,
+                        "question_type": "VSA",
+                        "question_text": "What is the negation of a statement?",
+                        "answer": "The negation of a statement is a new statement that is false whenever the original statement is true, and true whenever the original statement is false.",
+                        "marks": 2
+                    },
+                    {
+                        "question_number": 5,
+                        "question_type": "VSA",
+                        "question_text": "OR\nWhat is the converse of a statement?",
+                        "answer": "The converse of a statement 'If p, then q' is 'If q, then p'.",
+                        "marks": 2
+                    }
+                ]
+            },
+            "C": {
+                "questions": [
+                    {
+                        "question_number": 1,
+                        "question_type": "SA",
+                        "question_text": "Explain the concept of proof by contradiction.",
+                        "answer": "Proof by contradiction involves assuming the negation of the statement to be proved, then logically deducing a contradiction. This contradiction implies the initial assumption was false, thus proving the original statement.",
+                        "marks": 3
+                    },
+                    {
+                        "question_number": 2,
+                        "question_type": "SA",
+                        "question_text": "Explain the difference between a conjecture and a theorem.",
+                        "answer": "A conjecture is an unproven statement believed to be true, while a theorem is a statement that has been rigorously proven using mathematical logic and axioms.",
+                        "marks": 3
+                    },
+                    {
+                        "question_number": 3,
+                        "question_type": "SA",
+                        "question_text": "OR\nExplain with an example how to write the negation of a statement.",
+                        "answer": "Example: Statement: 'All cats are black.' Negation: 'Some cats are not black.'  The negation is formed by making the original statement false. Simply adding 'not' can be ambiguous.  'All cats are not black' could be misinterpreted as 'No cats are black'.",
+                        "marks": 3
+                    },
+                    {
+                        "question_number": 4,
+                        "question_type": "SA",
+                        "question_text": "Give an example of a mathematical statement and its converse.",
+                        "answer": "Statement: If a triangle is equilateral, then it is isosceles. Converse: If a triangle is isosceles, then it is equilateral.",
+                        "marks": 3
+                    },
+                    {
+                        "question_number": 5,
+                        "question_type": "SA",
+                        "question_text": "OR\nWhy are ambiguous sentences not considered mathematical statements?",
+                        "answer": "Ambiguous sentences are not considered mathematical statements because they cannot be definitively classified as always true or always false, which is a requirement for mathematical statements.",
+                        "marks": 3
+                    },
+                    {
+                        "question_number": 6,
+                        "question_type": "SA",
+                        "question_text": "Describe the structure of a mathematical proof.",
+                        "answer": "A mathematical proof consists of a sequence of logical deductions, each derived from previous statements, axioms, definitions, or previously proven theorems, ultimately leading to the statement being proved.",
+                        "marks": 3
+                    }
+                ]
+            },
+            "D": {
+                "questions": [
+                    {
+                        "question_number": 1,
+                        "question_type": "LA",
+                        "question_text": "Explain the process of deductive reasoning with an example from the chapter.",
+                        "answer": "Deductive reasoning begins with a set of premises assumed to be true.  Logical deductions are then made based on these premises. Example: Premise 1: Bijapur is in Karnataka. Premise 2: Shabana lives in Bijapur. Conclusion: Shabana lives in Karnataka.",
+                        "marks": 5
+                    },
+                    {
+                        "question_number": 2,
+                        "question_type": "LA",
+                        "question_text": "OR\nExplain the concept of proof by contradiction with an example.",
+                        "answer": "Proof by contradiction involves assuming the opposite of what you want to prove. Through logical deductions, you arrive at a contradiction, showing the initial assumption is false. Example: Proving \u221a2 is irrational involves assuming it is rational (p/q), and deriving a contradiction showing p and q have a common factor, contradicting the initial assumption.",
+                        "marks": 5
+                    },
+                    {
+                        "question_number": 3,
+                        "question_type": "LA",
+                        "question_text": "Explain the importance of counter-examples in mathematics.",
+                        "answer": "A single counter-example is sufficient to disprove a conjecture or statement.  It demonstrates that the statement is not universally true, thereby negating it.  This highlights the importance of rigorous proof in mathematics.",
+                        "marks": 5
+                    },
+                    {
+                        "question_number": 4,
+                        "question_type": "LA",
+                        "question_text": "OR\nDiscuss the difference between direct and indirect methods of proof, giving examples of each.",
+                        "answer": "Direct proof directly deduces the conclusion from the premises. Example: Proving the sum of two even numbers is even. Indirect proof involves proving the statement by contradiction or contrapositive. Example: Proving the irrationality of \u221a2 by contradiction.",
+                        "marks": 5
+                    }
+                ]
+            },
+            "E": {
+                "questions": [
+                    {
+                        "question_number": 1,
+                        "question_type": "Case-Study",
+                        "question_text": "A student claims that 'All prime numbers greater than 2 are odd'. Analyze this statement. Provide a counterexample if the statement is false. If true, explain why.  Also, write the converse of the statement and determine its truth value.",
+                        "answer": "The statement is true. All prime numbers greater than 2 are odd because any even number greater than 2 is divisible by 2, and therefore cannot be prime. Converse: If a number greater than 2 is odd, then it is prime. This is false. Counterexample: 9 is odd and greater than 2, but is not prime (divisible by 3).",
+                        "marks": 4
+                    },
+                    {
+                        "question_number": 2,
+                        "question_type": "Case-Study",
+                        "question_text": "OR\nA student is trying to prove that the sum of two rational numbers is rational. He starts by letting x and y be rational numbers and represents them as x = a/b and y = c/d, where b and d are not equal to zero. Analyze his approach and complete the proof, explaining each step.",
+                        "answer": "The student's approach is correct. x + y = (a/b) + (c/d) = (ad + bc) / bd. Since a, b, c, and d are integers, ad, bc, and bd are integers. Also, bd \u2260 0 since b \u2260 0 and d \u2260 0. Therefore, x + y is represented as a ratio of two integers with a non-zero denominator, proving it is rational.",
+                        "marks": 4
+                    },
+                    {
+                        "question_number": 3,
+                        "question_type": "Case-Study",
+                        "question_text": "OR\nConsider the statement: 'If a quadrilateral is a square, then it is a rectangle'.  Analyze this statement. Is it true or false?  Write its converse and determine its truth value.",
+                        "answer": "The statement is true, as all squares fulfill the criteria of a rectangle (4 right angles).  Converse: If a quadrilateral is a rectangle, then it is a square. This is false. A rectangle need not have all sides equal, which is a requirement for a square.",
+                        "marks": 4
+                    }
+                ]
+            }
+        }
+    }
+}
