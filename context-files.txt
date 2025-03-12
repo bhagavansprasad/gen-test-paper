@@ -1,6 +1,0 @@
-gen_test_paper.py
-summary.py
-test_paper.py
-common.py
-prompts/01-summarize-testpaper.prompt
-prompts/02-gen-testpaper.prompt

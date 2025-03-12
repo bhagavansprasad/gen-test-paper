@@ -1,0 +1,7 @@
+./src/models.py
+./src/assessment/generator.py
+./src/assessment/workflow.py
+./src/assessment/analyzer.py
+./src/utils/utilities.py
+./prompts/01-summarize-testpaper.prompt
+./prompts/02-gen-testpaper.prompt
