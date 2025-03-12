@@ -5,6 +5,7 @@ from src.models import PDFContent, Assessment
 from urllib.parse import urlparse
 from langchain_google_community import GCSFileLoader
 import json
+from typing import Dict
 from langchain_community.document_loaders import UnstructuredPDFLoader
 
 logger = logging.getLogger(__name__)  # Get logger for this module.
@@ -71,10 +72,9 @@ def clean_llm_output(llm_output: str) -> str:
     Cleans the LLM output by removing any leading/trailing whitespace and ```json blocks.
     """
     logger.debug("Cleaning LLM output.")
-    logger.debug(f"Original LLM output: {llm_output}")
+    logger.debug(f"Original LLM output len: {len(llm_output)}")
 
     llm_output = llm_output.strip()
-    logger.debug(f"Stripped LLM output: {llm_output}")
 
     # Remove ```json and ``` if present
     if llm_output.startswith("```json"):
@@ -103,24 +103,57 @@ def save_assessment_to_json(assessment: Assessment, filename: str):
         logger.exception(f"Error saving assessment to JSON: {e}")
         print(f"Error saving assessment to JSON: {e}")  # Keep this for user feedback
 
+def save_summary_to_file(summary: Dict, subject: str = "mathematics") -> None:
+    """Saves the test paper summary to a JSON file with a timestamped name in the 'summaries' directory."""
+    logger.info("Saving test paper summary to file...")
+    try:
+        if summary:
+            summaries_dir = "assessments"
+            if not os.path.exists(summaries_dir):
+                os.makedirs(summaries_dir)
+                logger.debug(f"Created directory: {summaries_dir}")
+            logger.info("Summaries dir created") 
+        else:
+            logger.warning("No test paper summary found")
+            return 
+
+    except Exception as e:
+        logger.exception(f"Error creating directory: {e}")
+        return None
+
+    now = datetime.datetime.now()
+    date_time_string = now.strftime("%Y%m%d_%H%M%S")
+    filename = os.path.join(summaries_dir, f"{date_time_string}_{subject}_summary.json")
+    logger.debug(f"Filename generated: {filename}")
+
+    try:
+        with open(filename, "w") as f:
+            logger.debug("Writing content to file.")
+            json.dump(summary, f, indent=4) # Use json.dump to save the dictionary as JSON
+        logger.info(f"Test paper summary saved to: {filename}")
+    except Exception as e:
+        logger.exception(f"Error writing to file: {e}")
+
 def save_assessment_to_file(assessment_text: str, subject: str = "mathematics") -> None:
-    logger.debug(f"In save_assessment_to_file...")
-    logger.debug(f"assessment_text len :{len(assessment_text)}")
-    if assessment_text:
-        try:
+    """Saves the assessment text to a file with a timestamped name in the 'assessments' directory."""
+    logger.info("Saving assessment to file...")
+    try:
+        if assessment_text:
             assessments_dir = "assessments"
             if not os.path.exists(assessments_dir):
                 os.makedirs(assessments_dir)
                 logger.debug(f"Created directory: {assessments_dir}")
             logger.info("Assessments dir created") 
+        else:
+            logger.warning("No assessment found")
+            return 
 
-        except Exception as e:
-            logger.exception(f"Error creating directory: {e}")
-            return None
+    except Exception as e:
+        logger.exception(f"Error creating directory: {e}")
+        return None
 
     now = datetime.datetime.now()
     date_time_string = now.strftime("%Y%m%d_%H%M%S")
-    subject = "mathematics"
     filename = os.path.join(assessments_dir, f"{date_time_string}_{subject}_assessment.txt")
     logger.debug(f"Filename generated: {filename}")
 
@@ -131,4 +164,5 @@ def save_assessment_to_file(assessment_text: str, subject: str = "mathematics") 
         logger.info(f"Assessment saved to: {filename}")
     except Exception as e:
         logger.exception(f"Error writing to file: {e}")
+
             

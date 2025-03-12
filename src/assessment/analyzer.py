@@ -56,18 +56,18 @@ def summarize_test_paper(test_paper_path: str) -> Optional[Dict]:
         # 5. Invoke the LLM
         logger.debug("Invoking LLM with formatted prompt.")
         llm_response = llm.invoke(formatted_prompt)
-        logger.debug(f"LLM response received: {llm_response}")
+        logger.debug(f"LLM response received len: {len(llm_response)}")
 
         # 6. Clean and Parse JSON Output
         logger.debug("Cleaning LLM output.")
         cleaned_output = clean_llm_output(llm_response)
-        logger.debug(f"Cleaned LLM output: {cleaned_output}")
+        logger.debug(f"Cleaned LLM output len: {len(cleaned_output)}")
 
         try:
             logger.debug("Parsing cleaned LLM output to JSON.")
             summary_json = json.loads(cleaned_output)
             logger.info("Test paper summarized successfully.")
-            logger.debug(f"Summary JSON: {summary_json}")
+            # logger.debug(f"Summary JSON: {summary_json}")
             return summary_json
         except json.JSONDecodeError as e:
             logger.exception(f"JSONDecodeError: {e}")
