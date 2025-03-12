@@ -7,6 +7,7 @@ from src.assessment.generator import generate_assessment  # Import node function
 from src.utils.utilities import load_pdf_content_from_gcs, PDFLoadError  # Import common functions
 from dataclasses import dataclass
 from src.utils.logging_config import configure_logging
+from src.utils.utilities import save_assessment_to_file
 import logging
 
 configure_logging()
@@ -113,9 +114,8 @@ def generate_assessment_node(state: GraphState):
 
         if state.assessment:
             logger.info("Assessment generated successfully.")
-            logger.debug(f"Assessment: {state.assessment}")  # Adjust printing based on your assessment object
-            print("\n--- Generated Test Paper ---")
-            print(state.assessment)  # Adjust printing based on your assessment object
+            logger.debug("\n--- Generated Test Paper ---")
+            logger.debug(f"Assessment len: {len(state.assessment)}")
         else:
             logger.warning("Failed to generate assessment.")
             state.error = "Failed to generate assessment"
@@ -143,11 +143,23 @@ def finished_node(state: GraphState):
     else:
         logger.info("Assessment generated successfully.")
 
-    # Add saving mechanism here
-    # if state.assessment:
-    #   save_assessment(state.assessment)
+    # Print the assessment
+    if state.assessment:
+        logger.info
+        ("\n--- Generated Test Paper ---")
+        # logger.info(state.assessment)
+
+    # Save the assessment to a text file
+    if state.assessment:
+        try:
+            # Call the utility function to save the file
+            save_assessment_to_file(state.assessment)
+        except Exception as e:
+            logger.exception(f"Error saving assessment to file: {e}")
+
     logger.debug(f"State after finished_node: {state}")
     logger.debug("Exiting finished_node")
+    
     return state #Exit here
 
 # ----------------------------------------------------------------------------
@@ -210,8 +222,8 @@ def main():
     logger.debug("Graph created. Invoking graph with initial state.")
     results = graph.invoke(initial_state)
 
-    print("Final Results:", results)
-    # logger.info(f"Graph execution completed. Final results: {results}")
+    logger.debug("Final Results...")
+    logger.info(f"Graph execution completed. Final results len: {len(results)}")
     logger.debug("Exiting main function.")
 
 

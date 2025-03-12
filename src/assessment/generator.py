@@ -45,7 +45,7 @@ def generate_assessment(pdf_content: PDFContent, test_paper_summary: Dict, file_
 
     logger.debug("Invoking LLM with formatted prompt.")
     llm_response = llm.invoke(formatted_prompt)
-    logger.debug(f"LLM response received: {llm_response}")
+    logger.debug(f"LLM response received len: {len(llm_response)}")
 
     llm_output = llm_response.strip()
     logger.debug("LLM output received.")
