@@ -7,7 +7,7 @@ from src.assessment.generator import generate_assessment  # Import node function
 from src.utils.utilities import load_pdf_content_from_gcs, PDFLoadError  # Import common functions
 from dataclasses import dataclass
 from src.utils.logging_config import configure_logging
-from src.utils.utilities import save_assessment_to_file
+from src.utils.utilities import save_assessment_to_file, save_summary_to_file
 import logging
 
 configure_logging()
@@ -46,8 +46,15 @@ def summarize_node(state: GraphState):
         if state.test_paper_summary:
             logger.info("Test paper summarized successfully.")
             logger.debug(f"Test paper summary: {state.test_paper_summary}")
-            print("\n--- Test Paper Summary ---")
-            print(state.test_paper_summary)
+            logger.info("\n--- Test Paper Summary ---")
+            logger.info(state.test_paper_summary)
+        
+            try:
+                save_summary_to_file(state.test_paper_summary)
+                logger.info("Test paper summary saved to file.")
+            except Exception as e:
+                logger.exception(f"Error saving test paper summary to file: {e}")
+                
         else:
             logger.warning("Failed to summarize test paper.")
             state.error = "Failed to summarize test paper"
@@ -223,7 +230,7 @@ def main():
     results = graph.invoke(initial_state)
 
     logger.debug("Final Results...")
-    logger.info(f"Graph execution completed. Final results len: {len(results)}")
+    logger.info(f"Graph execution completed")
     logger.debug("Exiting main function.")
 
 
