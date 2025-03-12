@@ -129,7 +129,7 @@ def save_summary_to_file(summary: Dict, subject: str = "mathematics") -> None:
     try:
         with open(filename, "w") as f:
             logger.debug("Writing content to file.")
-            json.dump(summary, f, indent=4) # Use json.dump to save the dictionary as JSON
+            json.dump(summary, f, indent=4) 
         logger.info(f"Test paper summary saved to: {filename}")
     except Exception as e:
         logger.exception(f"Error writing to file: {e}")
@@ -154,14 +154,22 @@ def save_assessment_to_file(assessment_text: str, subject: str = "mathematics") 
 
     now = datetime.datetime.now()
     date_time_string = now.strftime("%Y%m%d_%H%M%S")
-    filename = os.path.join(assessments_dir, f"{date_time_string}_{subject}_assessment.txt")
+    filename = os.path.join(assessments_dir, f"{date_time_string}_{subject}_assessment.json")
     logger.debug(f"Filename generated: {filename}")
 
+    assessment_text = assessment_text.strip('`')
+    assessment_text = assessment_text.strip('json')
+
     try:
+        assessment_data = json.loads(assessment_text)
+
         with open(filename, "w") as f:
             logger.debug("Writing content to file.")
-            f.write(assessment_text)
+            json.dump(assessment_data, f, indent=4)  # Dump the parsed object
         logger.info(f"Assessment saved to: {filename}")
+    except json.JSONDecodeError as e:
+        logger.error(f"JSONDecodeError: {e}.  Invalid JSON string: {assessment_text}")
+        logger.exception(e)
     except Exception as e:
         logger.exception(f"Error writing to file: {e}")
 
