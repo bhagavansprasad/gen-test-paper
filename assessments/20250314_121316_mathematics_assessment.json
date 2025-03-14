@@ -1,0 +1,412 @@
+{
+    "assessment": {
+        "sections": {
+            "A": {
+                "questions": [
+                    {
+                        "question_number": 1,
+                        "question_type": "MCQ",
+                        "question_text": "Which of these is NOT a type of sentence mentioned as NOT being a mathematical statement?",
+                        "options": {
+                            "A": "Question",
+                            "B": "Exclamation",
+                            "C": "Order",
+                            "D": "Suggestion"
+                        },
+                        "answer": "D",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 2,
+                        "question_type": "MCQ",
+                        "question_text": "A mathematical statement is acceptable if it is:",
+                        "options": {
+                            "A": "Always true or always false",
+                            "B": "Sometimes true and sometimes false",
+                            "C": "Ambiguous",
+                            "D": "A question"
+                        },
+                        "answer": "A",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 3,
+                        "question_type": "MCQ",
+                        "question_text": "The statement 'All humans are mortal' is:",
+                        "options": {
+                            "A": "Always true",
+                            "B": "Always false",
+                            "C": "Ambiguous",
+                            "D": "Sometimes true"
+                        },
+                        "answer": "A",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 4,
+                        "question_type": "MCQ",
+                        "question_text": "The statement 'Vehicles have four wheels' is:",
+                        "options": {
+                            "A": "Always true",
+                            "B": "Always false",
+                            "C": "Ambiguous",
+                            "D": "A mathematical statement"
+                        },
+                        "answer": "C",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 5,
+                        "question_type": "MCQ",
+                        "question_text": "All equilateral triangles are:",
+                        "options": {
+                            "A": "Isosceles",
+                            "B": "Scalene",
+                            "C": "Right-angled",
+                            "D": "Obtuse-angled"
+                        },
+                        "answer": "A",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 6,
+                        "question_type": "MCQ",
+                        "question_text": "Are all isosceles triangles equilateral?",
+                        "options": {
+                            "A": "True",
+                            "B": "False",
+                            "C": "Sometimes",
+                            "D": "Ambiguous"
+                        },
+                        "answer": "B",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 7,
+                        "question_type": "MCQ",
+                        "question_text": "If x < 4, which of the following is true?",
+                        "options": {
+                            "A": "2x > 8",
+                            "B": "2x < 6",
+                            "C": "2x < 8",
+                            "D": "2x = 8"
+                        },
+                        "answer": "C",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 8,
+                        "question_type": "MCQ",
+                        "question_text": "To correct the statement 'If the diagonals of a quadrilateral are equal, then it is a rectangle', we can add the condition:",
+                        "options": {
+                            "A": "It is a square",
+                            "B": "It is a rhombus",
+                            "C": "It is a parallelogram",
+                            "D": "It is a trapezium"
+                        },
+                        "answer": "C",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 9,
+                        "question_type": "Assertion-Reasoning",
+                        "question_text": "Assertion (A): If Bijapur is in Karnataka, and Shabana lives in Bijapur, then Shabana lives in Karnataka. Reason (R): This is an example of deductive reasoning.",
+                        "options": {
+                            "A": "Both A and R are true and R is the correct explanation of A",
+                            "B": "Both A and R are true but R is not the correct explanation of A",
+                            "C": "A is true but R is false",
+                            "D": "A is false but R is true"
+                        },
+                        "answer": "A",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 10,
+                        "question_type": "Assertion-Reasoning",
+                        "question_text": "Assertion (A): If all mathematics textbooks are interesting, and you are reading a mathematics textbook, then you are reading an interesting textbook. Reason (R): This conclusion is based on inductive reasoning.",
+                        "options": {
+                            "A": "Both A and R are true and R is the correct explanation of A",
+                            "B": "Both A and R are true but R is not the correct explanation of A",
+                            "C": "A is true but R is false",
+                            "D": "A is false but R is true"
+                        },
+                        "answer": "C",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 11,
+                        "question_type": "MCQ",
+                        "question_text": "Given y = -6x + 5 and x = 3, what is y?",
+                        "options": {
+                            "A": "-13",
+                            "B": "23",
+                            "C": "-10",
+                            "D": "10"
+                        },
+                        "answer": "A",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 12,
+                        "question_type": "MCQ",
+                        "question_text": "If ABCD is a parallelogram and AD = 5cm, AB = 7cm, what is the length of DC?",
+                        "options": {
+                            "A": "5cm",
+                            "B": "7cm",
+                            "C": "12cm",
+                            "D": "Cannot be determined"
+                        },
+                        "answer": "B",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 13,
+                        "question_type": "MCQ",
+                        "question_text": "The negation of 'All teachers are female' is:",
+                        "options": {
+                            "A": "All teachers are not female",
+                            "B": "Some teachers are male",
+                            "C": "No teachers are female",
+                            "D": "Some teachers are not female"
+                        },
+                        "answer": "B",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 14,
+                        "question_type": "MCQ",
+                        "question_text": "The negation of '2 + 2 = 4' is:",
+                        "options": {
+                            "A": "2 + 2 > 4",
+                            "B": "2 + 2 < 4",
+                            "C": "2 + 2 \u2260 4",
+                            "D": "2 + 2 = 5"
+                        },
+                        "answer": "C",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 15,
+                        "question_type": "MCQ",
+                        "question_text": "The converse of 'If p, then q' is:",
+                        "options": {
+                            "A": "If q, then p",
+                            "B": "If not p, then not q",
+                            "C": "If not q, then not p",
+                            "D": "p and q"
+                        },
+                        "answer": "A",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 16,
+                        "question_type": "MCQ",
+                        "question_text": "The converse of 'If Ahmad is in Mumbai, then he is in India' is:",
+                        "options": {
+                            "A": "If Ahmad is in India, then he is in Mumbai",
+                            "B": "If Ahmad is not in Mumbai, then he is not in India",
+                            "C": "If Ahmad is not in India, then he is not in Mumbai",
+                            "D": "Ahmad is in Mumbai and India"
+                        },
+                        "answer": "A",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 17,
+                        "question_type": "MCQ",
+                        "question_text": "What is a counter-example used for?",
+                        "options": {
+                            "A": "Proving a statement",
+                            "B": "Disproving a statement",
+                            "C": "Creating a conjecture",
+                            "D": "Formulating a theorem"
+                        },
+                        "answer": "B",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 18,
+                        "question_type": "MCQ",
+                        "question_text": "What is the main tool used in constructing a mathematical proof?",
+                        "options": {
+                            "A": "Inductive reasoning",
+                            "B": "Abductive reasoning",
+                            "C": "Deductive reasoning",
+                            "D": "Interrogative reasoning"
+                        },
+                        "answer": "C",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 19,
+                        "question_type": "MCQ",
+                        "question_text": "What is the core of constructing proofs in mathematics?",
+                        "options": {
+                            "A": "Guesswork",
+                            "B": "Intuition",
+                            "C": "Correct use of reasoning",
+                            "D": "Approximation"
+                        },
+                        "answer": "C",
+                        "marks": 1
+                    },
+                    {
+                        "question_number": 20,
+                        "question_type": "MCQ",
+                        "question_text": "What does a mathematical proof consist of?",
+                        "options": {
+                            "A": "Random statements",
+                            "B": "Valid arguments following logically from previous statements, axioms, definitions, or assumptions",
+                            "C": "Opinions and beliefs",
+                            "D": "Unverified claims"
+                        },
+                        "answer": "B",
+                        "marks": 1
+                    }
+                ]
+            },
+            "B": {
+                "questions": [
+                    {
+                        "question_number": 1,
+                        "question_type": "VSA",
+                        "question_text": "Given that all mathematicians are intelligent, and Ramanujan is a mathematician, what can you conclude about Ramanujan?",
+                        "answer": "Ramanujan is intelligent.",
+                        "marks": 2
+                    },
+                    {
+                        "question_number": 2,
+                        "question_type": "VSA",
+                        "question_text": "OR\nGiven that the sum of angles in a triangle is 180 degrees, and triangle PQR has angles 30, 60, and 90 degrees, what can you conclude about triangle PQR?",
+                        "answer": "Triangle PQR is a valid triangle.",
+                        "marks": 2
+                    },
+                    {
+                        "question_number": 3,
+                        "question_type": "VSA",
+                        "question_text": "Give the negation of the statement: 'Some dogs are friendly'.",
+                        "answer": "No dogs are friendly.",
+                        "marks": 2
+                    },
+                    {
+                        "question_number": 4,
+                        "question_type": "VSA",
+                        "question_text": "OR\nGive the negation of the statement: 'No cats are purple'.",
+                        "answer": "Some cats are purple.",
+                        "marks": 2
+                    },
+                    {
+                        "question_number": 5,
+                        "question_type": "VSA",
+                        "question_text": "What is the converse of 'If a number is divisible by 2, then it is even'?",
+                        "answer": "If a number is even, then it is divisible by 2.",
+                        "marks": 2
+                    }
+                ]
+            },
+            "C": {
+                "questions": [
+                    {
+                        "question_number": 1,
+                        "question_type": "SA",
+                        "question_text": "Explain the concept of deductive reasoning with an example from the chapter.",
+                        "answer": "Deductive reasoning involves drawing specific conclusions from general premises.  For example, if we know that all mathematics textbooks are interesting (premise 1), and we are reading a mathematics textbook (premise 2), we can deduce that the textbook we are reading is interesting (conclusion).",
+                        "marks": 3
+                    },
+                    {
+                        "question_number": 2,
+                        "question_type": "SA",
+                        "question_text": "OR\nExplain why 'The journey from Uttarkashi to Harsil is tiring' is considered an ambiguous statement in the context of mathematics.",
+                        "answer": "It's ambiguous because it's subjective and not definitively true or false.  'Tiring' is a relative term and depends on individual perception, physical fitness, mode of transport, etc.  Mathematical statements must be objectively either always true or always false.",
+                        "marks": 3
+                    },
+                    {
+                        "question_number": 3,
+                        "question_type": "SA",
+                        "question_text": "Explain why the statement 'Between any two rational numbers there is no rational number' is false. Give a counterexample.",
+                        "answer": "The statement is false because between any two rational numbers, there are infinitely many rational numbers.  If we have two rational numbers r and s, then (r+s)/2 is also a rational number and lies between r and s.  For example, between 1 and 2, 1.5 (or 3/2) is a rational number.",
+                        "marks": 3
+                    },
+                    {
+                        "question_number": 4,
+                        "question_type": "SA",
+                        "question_text": "OR\nExplain the concept of a counter-example and its role in disproving a mathematical statement.",
+                        "answer": "A counter-example is a specific case that contradicts a general statement. It is sufficient to disprove a statement because it demonstrates that the statement is not universally true. For example, the statement 'All primes are odd' is disproven by the counter-example '2', which is a prime but even.",
+                        "marks": 3
+                    },
+                    {
+                        "question_number": 5,
+                        "question_type": "SA",
+                        "question_text": "Explain the difference between a 'conjecture' and a 'theorem'.",
+                        "answer": "A conjecture is an intelligent guess or a proposed mathematical statement that seems plausible but hasn't been rigorously proven. A theorem, on the other hand, is a mathematical statement that has been formally and logically proven to be true based on axioms, definitions, and previously proven theorems.",
+                        "marks": 3
+                    },
+                    {
+                        "question_number": 6,
+                        "question_type": "SA",
+                        "question_text": "OR\nExplain the concept of 'proof by contradiction' with a simple example.",
+                        "answer": "Proof by contradiction involves assuming the opposite of what you want to prove and then showing that this assumption leads to a logical contradiction.  For example, to prove that \u221a2 is irrational, we assume it is rational (p/q form) and then show this leads to a contradiction where both p and q must be even, contradicting the assumption that they are coprime.",
+                        "marks": 3
+                    }
+                ]
+            },
+            "D": {
+                "questions": [
+                    {
+                        "question_number": 1,
+                        "question_type": "LA",
+                        "question_text": "Prove that the sum of two consecutive odd numbers is divisible by 4.",
+                        "answer": "Let the two consecutive odd numbers be 2n+1 and 2n+3, where n is an integer.  Their sum is (2n+1) + (2n+3) = 4n+4 = 4(n+1). Since n+1 is an integer, the sum is clearly divisible by 4.",
+                        "marks": 5
+                    },
+                    {
+                        "question_number": 2,
+                        "question_type": "LA",
+                        "question_text": "OR\nProve that if a\u00b2 is even for an integer 'a', then 'a' is also even.",
+                        "answer": "Proof by contradiction: Assume 'a' is odd. Then a = 2k+1 for some integer k.  a\u00b2 = (2k+1)\u00b2 = 4k\u00b2+4k+1 = 2(2k\u00b2+2k)+1, which is odd. This contradicts the given that a\u00b2 is even. Therefore, our assumption that 'a' is odd must be false, and 'a' must be even.",
+                        "marks": 5
+                    },
+                    {
+                        "question_number": 3,
+                        "question_type": "LA",
+                        "question_text": "Explain the structure of a mathematical proof, including the different elements involved and their significance.",
+                        "answer": "A mathematical proof is a sequence of logical deductions, each derived from previous statements, axioms, definitions, or previously proven theorems. It starts with a hypothesis or premise and ends with the conclusion being proven. Key elements include: 1. Definitions: Precise meanings of terms used. 2. Axioms: Self-evident truths assumed to be true. 3. Previously proven theorems: Established results used as building blocks. 4. Logical deductions: Steps connecting statements using rules of logic. 5. Conclusion: The statement being proven, derived logically from the preceding steps.",
+                        "marks": 5
+                    },
+                    {
+                        "question_number": 4,
+                        "question_type": "LA",
+                        "question_text": "OR\nExplain the process of formulating a conjecture and how it differs from forming a theorem. Use an example from the chapter to illustrate.",
+                        "answer": "Formulating a conjecture starts with observation and pattern recognition.  For example, observing the number of regions formed by connecting points on a circle leads to a conjecture about the relationship between points and regions (2^(n-1)). This is an educated guess.  A theorem, however, requires a rigorous proof.  The initial conjecture about regions on a circle is later shown to be false through a counter-example (n=6).  A theorem is a proven conjecture.",
+                        "marks": 5
+                    }
+                ]
+            },
+            "E": {
+                "questions": [
+                    {
+                        "question_number": 1,
+                        "question_type": "Case-Study",
+                        "question_text": "A student, Rohan, claims that if a number is divisible by both 2 and 3, then it must be divisible by 6. He verifies this for a few numbers: 6 (2x3), 12 (2x6, 3x4), 18 (2x9, 3x6), 24 (2x12, 3x8), and 30 (2x15, 3x10). Based on this, he concludes his claim is true for all numbers.\n(i) Is Rohan's approach correct? Explain why or why not.\n(ii) How can Rohan prove his claim rigorously?\n(iii) Formulate the converse of Rohan's claim.\n",
+                        "answer": "(i) Rohan's approach is incorrect.  Verifying a statement for a few cases doesn't prove it for all cases. A mathematical proof is needed.\n(ii) Rohan can prove his claim using deductive reasoning: If a number is divisible by 2, it can be written as 2a for some integer 'a'.  If it's also divisible by 3, it can be written as 3b for some integer 'b'. If a number is divisible by both 2 and 3, it must contain both 2 and 3 as prime factors. Therefore, it can be written as 2*3*c = 6c for some integer 'c'. This proves it's divisible by 6.  \n(iii) If a number is divisible by 6, then it is divisible by both 2 and 3.",
+                        "marks": 4
+                    },
+                    {
+                        "question_number": 2,
+                        "question_type": "Case-Study",
+                        "question_text": "A teacher presents the statement: 'All prime numbers greater than 2 are odd.'  She asks the class to discuss its validity.\n(i) Is the teacher\u2019s statement true or false? Explain.\n(ii)  Provide a counter-example if the statement is false.\n(iii) How would you modify the statement to make it true?",
+                        "answer": "(i) The statement is true. All even numbers greater than 2 are divisible by 2, therefore they cannot be prime. Prime numbers greater than 2 must be odd.\n(ii)  N/A (The statement is true)\n(iii) The statement is already true. No modification is needed.",
+                        "marks": 4
+                    },
+                    {
+                        "question_number": 3,
+                        "question_type": "Case-Study",
+                        "question_text": "Consider the statement: 'If a quadrilateral is a square, then its diagonals are equal.'\n(i) State the converse of this statement.\n(ii) Is the converse true or false? Explain with reasoning or a counter-example.\n(iii) Restate the original statement in a way that both the statement and its converse are true.",
+                        "answer": "(i) If the diagonals of a quadrilateral are equal, then it is a square. \n(ii) False. A rectangle also has equal diagonals but is not necessarily a square. A rectangle is a counterexample.\n(iii) If a quadrilateral is a rectangle and all its sides are equal, then its diagonals are equal. (The converse would also be true).",
+                        "marks": 4
+                    }
+                ]
+            }
+        }
+    }
+}

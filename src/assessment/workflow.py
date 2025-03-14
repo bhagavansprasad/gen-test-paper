@@ -9,6 +9,8 @@ from dataclasses import dataclass
 from src.utils.logging_config import configure_logging
 from src.utils.utilities import save_assessment_to_file, save_summary_to_file
 import logging
+import os
+from src.utils.utilities import visualize_graph
 
 configure_logging()
 logger = logging.getLogger(__name__)
@@ -204,9 +206,8 @@ def create_graph():
 
     builder.set_entry_point("summarize")
     logger.debug("Entry point set to 'summarize'")
-    graph = builder.compile()
-    logger.info("LangGraph graph created and compiled.")
-    return graph
+   
+    return builder
 
 # ----------------------------------------------------------------------------
 # 4. Main Execution
@@ -225,8 +226,17 @@ def main():
 
     # Create and execute the graph
     logger.debug("Creating graph.")
-    graph = create_graph()
+    builder = create_graph()
+
+    visualize_graph(builder, filename=os.path.basename(__file__))
+
+    print(f"builder :{dir(builder)}")
+    graph = builder.compile()
+    logger.info("LangGraph graph created and compiled.")
+    
+    print(f"graph :{dir(graph)}")
     logger.debug("Graph created. Invoking graph with initial state.")
+
     results = graph.invoke(initial_state)
 
     logger.debug("Final Results...")
