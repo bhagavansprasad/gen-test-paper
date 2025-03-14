@@ -229,4 +229,13 @@ def visualize_graph(graph, filename="graph"):
 
     except Exception as e:
         print(f"Error visualizing graph: {e}")
-            
+
+def save_compiled_graph(graph, filename="compiled_graph"):
+    filename = filename.split(".")[0]+".png"
+    print(f"Visualizing graph and saving to {filename}")
+
+    graph_png = graph.get_graph().draw_mermaid_png()
+
+    with open(filename, "wb") as f:
+        f.write(graph_png)
+    print(f"Graph saved as {filename}")

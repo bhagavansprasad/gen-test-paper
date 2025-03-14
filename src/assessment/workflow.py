@@ -10,7 +10,7 @@ from src.utils.logging_config import configure_logging
 from src.utils.utilities import save_assessment_to_file, save_summary_to_file
 import logging
 import os
-from src.utils.utilities import visualize_graph
+from src.utils.utilities import visualize_graph, save_compiled_graph
 
 configure_logging()
 logger = logging.getLogger(__name__)
@@ -228,14 +228,12 @@ def main():
     logger.debug("Creating graph.")
     builder = create_graph()
 
-    visualize_graph(builder, filename=os.path.basename(__file__))
-
-    print(f"builder :{dir(builder)}")
     graph = builder.compile()
     logger.info("LangGraph graph created and compiled.")
-    
-    print(f"graph :{dir(graph)}")
     logger.debug("Graph created. Invoking graph with initial state.")
+
+    visualize_graph(builder, filename=os.path.basename(__file__))
+    save_compiled_graph(graph, filename=os.path.basename(__file__))
 
     results = graph.invoke(initial_state)
 
