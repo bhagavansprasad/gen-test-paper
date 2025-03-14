@@ -7,6 +7,10 @@ from langchain_google_community import GCSFileLoader
 import json
 from typing import Dict
 from langchain_community.document_loaders import UnstructuredPDFLoader
+import graphviz
+import os
+from langgraph.graph import StateGraph, START
+
 
 logger = logging.getLogger(__name__)  # Get logger for this module.
 
@@ -173,4 +177,56 @@ def save_assessment_to_file(assessment_text: str, subject: str = "mathematics") 
     except Exception as e:
         logger.exception(f"Error writing to file: {e}")
 
+
+def get_entry_point_node_name(graph: StateGraph) -> str | None:
+  try:
+    # Iterate through the edges to find the edge starting from the START node
+    for start_node, node_name in graph.edges:
+        if start_node == START:
+            return node_name  # Found the entry point
+    return None  # No entry point found
+  except Exception as e:
+    print(f"Error retrieving entry point: {e}")
+    return None
+
+def visualize_graph(graph, filename="graph"):
+    """
+    Visualizes a LangGraph graph using graphviz and saves it as an image.
+
+    Args:
+        graph_data: A dictionary containing the graph definition (nodes, edges, entry_point).
+        filename: The name of the image file to save (e.g., "graph.png", "graph.pdf").
+    """
+    
+    filename = filename.split(".")[0]
+    print(f"Visualizing graph and saving to {filename}")
+
+    entry_point = get_entry_point_node_name(graph)
+    
+    graph_data = {
+        "nodes": list(graph.nodes.keys()),
+        "edges": graph.edges,
+        "entry_point": entry_point
+    }
+    
+    try:
+        dot = graphviz.Digraph(comment='LangGraph Graph')
+
+        # Add nodes
+        for node_name in graph_data["nodes"]:
+            dot.node(node_name, node_name)  # Use node name as label
+
+        # Add edges
+        for start_node, end_node in graph_data["edges"]:
+            dot.edge(start_node, end_node)
+
+        # Set graph attributes (optional)
+        dot.attr(rankdir='LR')  # Left-to-right layout
+
+        # Save the graph to a file
+        dot.render(filename, view=False, format='png', cleanup=True)
+        print(f"Graph visualized and saved to {filename}")
+
+    except Exception as e:
+        print(f"Error visualizing graph: {e}")
             
